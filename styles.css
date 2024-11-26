@@ -48,12 +48,12 @@ table {
 }
 
 /*---------- CUSTOM CSS STYLES ----------*/
-:root{
+:root {
     font-size: 8px;
     --header-fonts: 'Julius Sans One', sans-serif;
     --body-fonts: 'Spartan', sans-serif;
-    --sage-green: #383E36;
-    --light-green: #6F9D75;
+    --sage-green: #2B4D2B; 
+    --light-green: #E6F5E6; 
     --sienna: #90413B;
     --cream: #F3F4EC;
 }
@@ -68,10 +68,10 @@ body {
     text-align: center;
 }
 
-header{
+header {
     background-color: var(--cream);
-    color: var(--light-green);
-    padding: 2rem 0 1rem 0;
+    color: #385B33; 
+    padding: 3rem 0 2rem 0;
 }
 
 main, footer{
@@ -88,17 +88,24 @@ h1, h2, h3{
 
 h1 {
     font-size: 3rem;
-    margin: 0 0 1rem 0;
+    margin-bottom: 2rem;
 }
 
 h2{
     font-size: 2rem;
-    margin: 0.75rem 0.25rem;
+    margin: 1.5rem 0.5rem;
 }
 
 h3{
-    font-size: 1.75rem;
-    margin: 2rem 0.25rem 1rem 0.25rem;
+    font-size: 2rem;
+    margin: 2.5rem 0.5rem 1.5rem 0.5rem
+}
+
+h1, h2, h3 {
+    font-family: var(--header-fonts);
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
 }
 
 #catering h3{
@@ -109,6 +116,7 @@ nav{
     width: 100%;
     margin: 0 auto;
     border-top: 1px solid var(--sage-green);
+    padding: 1rem 0;
 }
 
 .sr-only {
@@ -125,7 +133,8 @@ nav ul{
 }
 
 nav li {
-    list-style-type: none;   
+    list-style-type: none; 
+    margin-bottom: 1rem;  
 }
 
 a{
@@ -137,7 +146,13 @@ a{
 }
 
 nav a {
-    color: var(--light-green);
+    color: #2B4D2B; 
+    font-size: 1.6rem; 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem; 
+    margin: 0.5rem auto; 
     border-top: 1px solid var(--sage-green);
     border-bottom: 1px solid var(--sage-green);
 }
@@ -149,8 +164,15 @@ li a:first-of-type{
 main {
     width: 100%;
     margin: 1rem auto;
-    padding: 1rem 0;
+    padding: 2rem 1rem;
     background-color: var(--sienna);
+}
+
+main a, input[type=submit] {
+    background-color: #2B4D2B; 
+    color: var(--cream); 
+    text-decoration: none;
+    margin: 0 auto;
 }
 
 img{
@@ -177,8 +199,8 @@ main a:hover {
 
 section{
     background-color: var(--sage-green);
-    padding: 2rem 0;
-    margin: 1rem auto;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
 }
 
 #catering, #contact{
@@ -198,6 +220,7 @@ main p, label, input, legend{
 
 form{
     margin: 0 auto;
+    padding: 2rem;
 }
 
 input, label, select, textarea{
@@ -209,17 +232,25 @@ label{
     margin-top: 1rem;
 }
 
+input, label, select, textarea {
+    display: block;
+    width: 90%;
+    margin: 1rem auto; 
+    padding: 1rem;
+    font-size: 1.4rem; 
+}
+
 input, select, textarea{
     background-color: var(--cream);
     border: 2px solid var(--light-green);
 }
 
 input[type=text], input[type=email], input[type=tel]{
-    height: 2rem;
+    height: 3rem;
 }
 
 select{
-    height: 2.5rem;
+    height: 3.5rem;
     width: 95%;
 }
 
@@ -245,19 +276,36 @@ fieldset label{
 }
 
 textarea{
-    height: 4rem;
+    height: 6rem;
 }
 
 input[type=submit]{
     font-family: var(--body-fonts);
     font-size:  1.2rem;
     display: block;
-    width: 200px;
+    width: 250px;
     background-color: var(--cream);
     color: var(--sage-green);
     padding: 1rem;
     margin: 1rem auto;
     text-align: center;
+    margin-top: 2rem;
+}
+
+a, input[type=submit] {
+    background-color: #2B4D2B; 
+    color: var(--cream);
+    font-size: 1.6rem; 
+    text-decoration: none;
+    padding: 1.5rem 2rem; 
+    margin: 1rem auto; 
+    display: inline-block;
+    text-align: center;
+}
+
+a:hover, input[type=submit]:hover {
+    background-color: #6F9D75; 
+    color: #F3F4EC;
 }
 
 input[type=submit]:hover, input[type=submit]:focus{
